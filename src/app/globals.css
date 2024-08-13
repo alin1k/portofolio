@@ -7,3 +7,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#title::before{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  height: 100%;
+}
+
+#title::after{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  border-bottom: 1px solid;
+  height: 100%;
+}
+
+@media (min-width: 768px) { 
+  #title::after{
+    border: none;
+  }
+
+  #title::before{
+    border-bottom: none;
+  }
+}

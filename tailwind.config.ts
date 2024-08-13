@@ -16,7 +16,7 @@ const config: Config = {
         },
         light: {
           DEFAULT: "#f1f1f1",
-          dark: "#a8a8a8"
+          dark: "#757575"
         },
         accent: {
           DEFAULT: "#db70b8"
