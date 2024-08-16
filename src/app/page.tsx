@@ -7,18 +7,19 @@ import Image from "next/image";
 
 const getUserRepos = async ()=>{
   const res = await fetch('https://api.github.com/users/alin1k/repos'
-    ,{
-      cache: 'no-store'
-    }
+    // ,{
+    //   cache: 'no-store'
+    // }
   );
   return res.json();
 }
 
 export default async function Home() {
 
-  const pinnedRepos : string[] = ['SocialSpace', 'React-ToDoList', 'Weather-App', 'moviebase']
   let repos = await getUserRepos();
-  repos = repos.filter((repo: any) => pinnedRepos.includes(repo.name))
+  repos = repos.filter((repo: any) => {
+    return repo.topics.includes("featured-project")
+  })
 
   return (
     <div className="flex flex-col">
@@ -29,7 +30,7 @@ export default async function Home() {
           <h2 className="text-xl font-heading font-semibold inline me-2">ABOUT ME</h2>
           <PersonIcon className="size-7 pb-1.5"/>
           <hr />
-          <p className="mt-1 leading-4 font-extralight">I am a passionate programmer with interests in Full-Stack Development and Embedded Systems, focused on continuous development and constantly improving my skills</p>
+          <p className="mt-1 leading-4 font-extralight">I am an <span className='font-medium'>Electrical Engineer and Computer Science</span> student, passionate about programming with interests in <span className='font-medium'>Full-Stack Development</span> and <span className='font-medium'>Embedded Systems</span>, focused on continuous development and constantly improving my skills.</p>
         </div>
         <div className="mt-5">
           <h2 className="text-xl font-heading font-semibold inline me-2">TECH STACK</h2>

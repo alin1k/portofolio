@@ -9,7 +9,7 @@ export default function ProjectCard({repo} : any) {
       <div className="flex flex-col flex-wrap">
         <p className="font-semibold text-lg">{repo.name}</p>
         <p className='text-sm text-light-dark mt-[-0.40rem]'>
-          Last modified: {formatDistance(repo.updated_at, new Date(), {addSuffix: true})}
+          Last modified: {formatDistance(repo.pushed_at, new Date(), {addSuffix: true})}
         </p>
       </div>
       

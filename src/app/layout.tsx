@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dm_sans.variable} ${rubik.variable} bg-primary flex flex-col text-light p-3`} suppressHydrationWarning={true}>
-        <main className="self-center w-full sm:w-3/4 lg:w-1/2 2xl:w-1/3 py-10">
+        <main className="self-center w-full sm:w-3/4 lg:w-1/2 2xl:w-1/3 py-16">
           {children}
         </main>
       </body>

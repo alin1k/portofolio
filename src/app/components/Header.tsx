@@ -6,7 +6,7 @@ import MailIcon from '@mui/icons-material/Mail';
 
 export default function Header() {
   return (
-    <header className=" border rounded flex flex-col md:flex-row font-heading font-light">
+    <header className="border rounded flex flex-col md:flex-row font-heading font-light">
       <div className="w-full flex justify-center items-center relative p-5">
         <div className="text-center bg-primary" id="title">
           <h1 className="font-heading text-2xl xl:text-3xl font-semibold">OLTEANU ALIN</h1>
