@@ -7,9 +7,9 @@ import Image from "next/image";
 
 const getUserRepos = async ()=>{
   const res = await fetch('https://api.github.com/users/alin1k/repos'
-    // ,{
-    //   cache: 'no-store'
-    // }
+    ,{
+      cache: 'no-store'
+    }
   );
   return res.json();
 }
