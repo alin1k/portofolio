@@ -29,7 +29,7 @@ export default async function Home() {
       <div className="mt-16 font-text font-light flex flex-col gap-5">
         <div>
           <Heading Icon={PersonIcon}>ABOUT ME</Heading>
-          <p className="mt-1 leading-4 font-extralight">I am an <span className='font-medium'>Electrical Engineer and Computer Science</span> student, passionate about programming with interests in <span className='font-medium'>Full-Stack Development</span> and <span className='font-medium'>Embedded Systems</span>, focused on continuous development and constantly improving my skills.</p>
+          <p className="mt-1 leading-4 font-extralight">I am an <span className='font-medium'>Electrical Engineering and Computer Science</span> student, passionate about programming with interests in <span className='font-medium'>Full-Stack Development</span> and <span className='font-medium'>Embedded Systems</span>, focused on continuous development and constantly improving my skills.</p>
         </div>
         <div>
           <Heading Icon={ConstructionIcon}>TECH STACK</Heading>
