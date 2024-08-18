@@ -1,9 +1,18 @@
-import FolderIcon from '@mui/icons-material/Folder';
+"use client"
+
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 import {formatDistance} from "date-fns";
+import { useEffect, useState } from 'react';
 
 export default function ProjectCard({repo} : any) {
+
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(()=>{
+    setIsClient(true)
+  }, [])
+
   return (
     <div className="font-text border-light rounded">
       <div className="flex flex-col flex-wrap">
@@ -18,14 +27,14 @@ export default function ProjectCard({repo} : any) {
       <div className="flex flex-row">
         <div className="flex flex-row flex-wrap hover:bg-primary-light rounded-2xl ms-[-0.5rem]">
           <a href={repo.html_url} target='_blank' className='p-2'>
-            <GitHubIcon className='size-5'/>
+            {isClient && <GitHubIcon className='size-5'/>}
           </a>
         </div>
         
         {repo.homepage && 
           <div className="flex flex-row flex-wrap hover:bg-primary-light rounded-2xl">
             <a href={repo.homepage} target='_blank' className='p-2'>
-              <LinkIcon className='size-6'/>
+              {isClient && <LinkIcon className='size-6'/>}
             </a>
           </div>
         }
