@@ -7,7 +7,6 @@ const getUserRepos = async ()=>{
       cache: 'no-store'
     }
   );
-  await new Promise((resolve) => setTimeout(resolve, 1000));
   return res.json();
 }
 
