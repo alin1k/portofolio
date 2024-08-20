@@ -12,8 +12,12 @@ const rubik = Rubik({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://olteanu-alin.com'),
   title: 'Olteanu Alin - Portofolio',
   description: 'FullStack developer Olteanu Alin Portofolio',
+  openGraph : {
+    images: '/opengraph-image.jpeg'
+  }
 }
 
 export default function RootLayout({
