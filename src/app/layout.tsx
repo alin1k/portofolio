@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css"
 import { DM_Sans, Rubik } from "next/font/google"
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <main className="self-center w-full sm:w-3/4 lg:w-1/2 2xl:w-1/3 py-16">
           {children}
           <Analytics/>
+          <SpeedInsights/>
         </main>
       </body>
     </html>
