@@ -10,7 +10,7 @@ export default function Header() {
       <div className="w-full flex justify-center items-center relative p-5">
         <div className="text-center bg-primary" id="title">
           <h1 className="font-heading text-2xl xl:text-3xl font-semibold">OLTEANU ALIN</h1>
-          <h2 className="font-heading text-sm md:text-lg xl:text-xl">WEB DEVELOPER</h2>
+          <h2 className="font-heading text-sm md:text-lg xl:text-xl">ODOO DEVELOPER</h2>
         </div>
       </div>
 
